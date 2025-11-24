@@ -9,21 +9,23 @@ type ContentProps = Content;
 const Content: React.FC<ContentProps> = ({ title, items }) => {
   return (
     <section className="my-14 text-sm">
-      <h3 className="mb-6">{title}</h3>
+      <h4 className="mb-6 text-blue-500 text-2xl dark:text-white font-bold font-sans border  rounded-xl  bg-gradient-to-tr from-orange-50 to-orange-80 p-2">
+        {title}
+      </h4>
       <div className="flex flex-col gap-6">
         {items.map((item, index) => {
           return (
             <div className="flex" key={index}>
-              <div className="mr-8 max-w-[100px] w-full text-slate-400 dark:text-slate-400">
+              <div className="mr-8 max-w-[100px] w-full text-slate-400 dark:text-slate-400 ">
                 {item.date}
               </div>
-              <div className="flex flex-col flex-1">
-                <h4>{item.title}</h4>
+              <div className="flex flex-col flex-1 ">
+                <h4 className="font-light">{item.title}</h4>
                 <p className="text-slate-600 dark:text-gray-400">
                   {item.subTitle}
                 </p>
                 {item.description ? (
-                  <p className="text-slate-600 dark:text-gray-400 mt-2">
+                  <p className="text-slate-600 dark:text-gray-400 mt-2 max-w-[700px]">
                     {item.description}
                   </p>
                 ) : null}
@@ -39,7 +41,11 @@ const Content: React.FC<ContentProps> = ({ title, items }) => {
 export default function Home() {
   return (
     <>
-      <main className="max-w-xl mx-auto px-6 py-20 relative min-h-screen font-light">
+      <main
+        className="max-w-xl mx-auto px-6 py-20 relative min-h-screen font-light 
+                 border border-white/30 rounded-2xl 
+                 backdrop-blur-lg bg-white/10 shadow-lg"
+      >
         <section className="flex items-center">
           <Image
             alt="Author"
@@ -49,10 +55,10 @@ export default function Home() {
             className="rounded-full object-cover"
           />
           <div className="ml-4">
-            <h1 className="mb-0.5 text-xl text-slate-900 dark:text-slate-100">
+            <h1 className="mb-2 text-xl text-slate-900 dark:text-slate-100 ">
               {generalData.name}
             </h1>
-            <p className="text-slate-600 dark:text-slate-300 text-sm">
+            <p className="text-slate-600 dark:text-white-300 text-sm bg-green-200 bg-gradient-to-tr from-blue-200  to-green-200 p-2 rounded-xl">
               {generalData.jobTitle}
             </p>
             {generalData.website ? (
@@ -72,7 +78,9 @@ export default function Home() {
           </div>
         </section>
         <section className="my-9 text-sm">
-          <h3 className="mb-1 text-slate-900 dark:text-slate-100">About</h3>
+          <h3 className="mb-1 text-slate-900 dark:text-slate-100 text-left text-sm mb-2">
+            About
+          </h3>
           <div className="text-slate-600 dark:text-slate-300">
             <p>{generalData.about}</p>
           </div>
@@ -81,8 +89,10 @@ export default function Home() {
           return <Content {...content} key={index} />;
         })}
         <section className="my-14 text-sm">
-          <h3 className="mb-6 text-slate-900">Contact</h3>
-          <div className="flex flex-col gap-6">
+          <h3 className="mb-6 text-slate-900 text-blue-500 font-bold">
+            Contact
+          </h3>
+          <div className="flex flex-col gap-6 ">
             {generalData.contacts.map((contact, index) => {
               return (
                 <div className="flex" key={index}>
@@ -116,9 +126,9 @@ export default function Home() {
             })}
           </div>
         </section>
-        <div className="px-6 absolute left-0 bottom-6">
+        {/* <div className="px-6 absolute left-0 bottom-6">
           <ThemeSwitch />
-        </div>
+        </div> */}
       </main>
     </>
   );

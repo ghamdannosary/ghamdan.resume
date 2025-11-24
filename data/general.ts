@@ -1,30 +1,31 @@
 export const generalData = {
-  name: "John Doe",
-  avatar: "https://github.com/ibelick.png",
-  jobTitle: "Senior Front-End Developer",
-  website: "https://www.julienthibeaut.xyz",
+  name: "Ghamdan Nosari",
+  avatar: "https://github.com/ghamdannosary.png",
+  jobTitle: "Full-Stack & Backend Developer | .NET & API Specialist | Next & React |  FinTech & ERP Solutions | E-Commerce Software Engineer",
+  website: "",
   about:
-    "Hey there! I'm John, a senior front-end developer with 10 years of experience in web development.",
+    "I am a skilled professional in computer science and web development, with expertise in SQL Server, C#, VB.NET, ASP.NET Core, and SMS/IVR systems (SMPP, Asterisk). I have developed comprehensive accounting solutions with inventory, sales, purchases, and POS systems, and I am experienced as a FinTech company developer. I am also proficient in modern web development using Next.js, React, JavaScript, TypeScript, and Tailwind CSS. A confident communicator and public speaker, I excel at presenting ideas clearly and collaborating effectively. I am eager to contribute my technical and communication skills to a dynamic team",
   contacts: [
     {
       label: "Email",
-      value: "john.doe@gmail.com",
-      href: "mailto:john.doe@gmail.com",
+      value: "ghamdan.net@gmail.com",
+      href: "mailto:ghamdan.net@gmail.com",
     },
     {
-      label: "Twitter",
-      value: "ibelick",
-      href: "https://twitter.com/ibelick",
+      label: "linkedin",
+      value: "ghamdan nosari",
+      href: "https://www.linkedin.com/in/ghamdan-nosari-it/",
     },
     {
       label: "Github",
-      value: "ibelick",
-      href: "https://github.com/ibelick",
+      value: "ghamdan nosari",
+      href: "https://github.com/ghamdannosary",
     },
     {
-      label: "Read.CV",
-      value: "ibelick",
-      href: "https://read.cv/ibelick",
+      label: "mobile",
+      value: "967 770590905",
+      href: "tel:967 770590905",
     },
+    
   ],
 };
