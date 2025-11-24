@@ -79,7 +79,7 @@ export default function Home() {
         </section>
         <section className="my-9 text-sm">
           <h3 className="mb-1 text-slate-900 dark:text-slate-100 text-left text-sm mb-2">
-            About
+            About:
           </h3>
           <div className="text-slate-600 dark:text-slate-300">
             <p>{generalData.about}</p>
