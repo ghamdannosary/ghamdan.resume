@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-@layer {
+@layer components {
     .input-class {
-        @apply text-16 placeholder:text-12 rounded-lg border border-gray-300 text-gray-500 placeholder:text-gray-500
+        @apply text-base placeholder:text-xs rounded-lg border border-gray-300 text-gray-500 placeholder:text-gray-500;
     }
 }
