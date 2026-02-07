@@ -67,12 +67,13 @@ export default function Home() {
                   href={generalData.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:underline "
                 >
                   {generalData.website
                     .replace(/(^\w+:|^)\/\//, "")
                     .replace("www.", "")}
                 </a>
+                
               </span>
             ) : null}
           </div>

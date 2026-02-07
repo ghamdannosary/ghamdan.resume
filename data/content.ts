@@ -4,7 +4,7 @@ export const contentData = [
     items: [
       {
         title: "Head of Systems & Applications Development Section at Financial Tamkeen Corp (Cash e-Wallet), Sana'a ",
-        subTitle: "Remote",
+        subTitle: "OnSite",
         date: "Nov 2019 - Present",
         description: `Planning, executing, and overseeing projects related to e-wallet solutions, while developing and implementing high-performance, testable backend APIs using ASP.NET and .NET Core. I ensure writing clean, maintainable, and easily debug gable code, leveraging the latest technologies, including the microservices pattern, Agile, and DevOps methodologies.  
 I utilize advanced tools such as Redis, Postman, SoapUI, and logging & profiling tools to optimize performance. Additionally, I use Swagger for API documentation, Autofac-DI for dependency injection, and OAuth & JWT for secure authentication. I also implement CORS policies, exception handling, and efficient routing to ensure robust and scalable APIs
